@@ -20,3 +20,18 @@ exports.getRentals = function (req, res, next) {
     });
     return next();
 }
+
+exports.deleteRental = function (req, res, next) {
+    var stmt = db.prepare("DELETE FROM tblGeneral WHERE PropID = ?");
+    stmt.run(req.params.id, function (err, row) {
+        var ret = { error: false };
+        if (err) {
+            ret.error = true;
+            ret.errMsg = err;
+        } else {
+            ret.changes = this.changes;
+        }
+        res.send(ret);
+    });
+    return next();
+}

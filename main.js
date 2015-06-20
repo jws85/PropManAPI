@@ -17,6 +17,7 @@ server.get(base + '/rental', controllers.rentals.getRentals);
 server.head(base + '/rental', controllers.rentals.getRentals);
 server.get(base + '/rental/:id', controllers.rentals.getRental);
 server.head(base + '/rental/:id', controllers.rentals.getRental);
+server.del(base + '/rental/:id', controllers.rentals.deleteRental);
 
 server.listen(conf.port, function () {
     console.log('%s listening at %s', server.name, server.url);
