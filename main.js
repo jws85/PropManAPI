@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var restify = require('restify'),
     fs = require('fs'),
     conf = require('./config');

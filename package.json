@@ -2,7 +2,7 @@
   "name": "propman-backend",
   "version": "0.0.1",
   "description": "Backend to the PropMan webapp",
-  "main": "propman",
+  "main": "main.js",
   "dependencies": {
     "restify": "^3.0.3",
     "sqlite3": "^3.0.8"
