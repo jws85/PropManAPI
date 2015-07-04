@@ -1,0 +1,12 @@
+[Service]
+ExecStart=/usr/bin/node /home/propman/propman/main.js
+WorkingDirectory=/home/propman/propman
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=propman
+User=propman
+Group=propman
+
+[Install]
+WantedBy=multi-user.target
