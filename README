@@ -4,7 +4,8 @@ learn.  As such, it is probably going to be in flux at any given time, and the
 installation instructions are not going to be super helpful.  Once I come
 closer to a non-beta sort of release, I'll clean this readme up...
 
-This is the backend API for PropMan.
+This is the backend API for PropMan.  I'll add a link here to the frontend
+application when I put that up...
 
 As of writing, you need the following to install:
 
@@ -16,3 +17,7 @@ If you are on a systemd-based Linux distro (Fedora, Arch), you can also pull in
 the following to install this as a background daemon:
 
  - make
+
+LICENSE:  MIT.  This is a pretty cut-and-dried CRUD "RESTful" API; IMHO the
+educational value of a simple, practical node.js example outweighs any monetary
+compensation I might get from this...
