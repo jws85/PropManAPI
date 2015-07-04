@@ -1,0 +1,18 @@
+WARNING:  This is a working application I am writing for a family member, but
+it is also sort of a "playground" for technologies that I feel I ought to
+learn.  As such, it is probably going to be in flux at any given time, and the
+installation instructions are not going to be super helpful.  Once I come
+closer to a non-beta sort of release, I'll clean this readme up...
+
+This is the backend API for PropMan.
+
+As of writing, you need the following to install:
+
+ - node.js
+ - npm
+ - SQLite 3
+
+If you are on a systemd-based Linux distro (Fedora, Arch), you can also pull in
+the following to install this as a background daemon:
+
+ - make
